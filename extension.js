@@ -5,12 +5,6 @@ function getElementByXpath(path) {
 
   let socket;
 
-//   document.onreadystatechange = () => {
-//     if (document.readyState === 'complete') {
-//         getinfo();
-//     }
-//   };
-
   
   (()=>{
     socket=io.connect('http://localhost:60024');
@@ -74,30 +68,14 @@ function getinfo(){
                 "music_url":musicurl
                 };
                 sendData_post(full_data);
-                
-                // sendData(id,title,uploader,video.currentTime,video.duration,video.paused,false,url_bytes_string,music_url_bytes_string);
-                // console.log(chrome.tabs.getCurrent());
             }
     },500);
-    // return [id,title,uploader,video.currentTime,time_duration,video.paused,false];
+
 
 }
 
-function sendData(id,title,uploader,current_time,duration,paused,terminate,url_bytes_string,musicurl){
-    xhr=new XMLHttpRequest();
-    xhr.open('GET','http://localhost:60024/add/'+id+'/'+title+'/'+uploader+'/'+current_time+'/'+duration+'/'+paused+'/'+terminate+'/'+url_bytes_string+'/'+musicurl,true);
-    // console.log("GOT");
-    xhr.send();
-
-}
 
 function sendData_post(full_data){
-    // let xhr=new XMLHttpRequest();
-    // xhr.open('POST','http://localhost:60024/post',true);
-    // xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    // // console.log("GOT");
-    // console.log("Data Send");
-    // xhr.send(JSON.stringify(full_data));
     socket.emit('data_new',full_data);
 
 }
@@ -118,23 +96,6 @@ function uniqueId () {
 }
 
 
-function stringToBytes(str) {
-  let ch, st, re = [];
-  for (let i = 0; i < str.length; i++ ) {
-	ch = str.charCodeAt(i);  // get char 
-	st = [];                 // set up "stack"
-	do {
-	  st.push( ch & 0xFF );  // push byte to stack
-	  ch = ch >> 8;          // shift value down by 1 byte
-	}  
-	while ( ch );
-	// add stack contents to result
-	// done because chars have "wrong" endianness
-	re = re.concat( st.reverse() );
-  }
-  // return an array of bytes
-  return re;
-}
 
 function get_music_url(){
     let network=performance.getEntries();
