@@ -26,6 +26,6 @@ Go to chrome menu
 -Load unpacked
 Find the Extensions folder in this rep and select the manifest.json
 
-Every thing should work now
+Every thing should work now.
 
 To get the data that the extension is sending you go to this url http://localhost:60024/getData
