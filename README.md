@@ -28,7 +28,7 @@ Go to chrome menu
 
 -Load unpacked
 
-Find the Extensions folder in this rep and select the manifest.json.
+Find the Extensions folder in this repository and select the manifest.json.
 
 Every thing should work now.
 
