@@ -1,6 +1,9 @@
 # Youtube_info_sender
 Chrome extension that sends information about the current tab open in youtube
+
 ###SERVER###
+
+
 Intall node js and in cmd run 
 
 npm install express
@@ -20,6 +23,8 @@ npm run-script install-windows-service
 after installing all the modules go into the winser folder in node moudules and run cmd as admin in that folder type in cmd "nssm start api_test" to start the server.
 
 ###Extension###
+
+
 Go to chrome menu
 
 -more tools
