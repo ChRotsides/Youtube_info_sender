@@ -71,6 +71,7 @@ function getinfo(){
 
 function sendData_post(full_data){
     socket.emit('data_new',full_data);
+    
 
 }
 
