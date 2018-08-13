@@ -21,10 +21,14 @@ after installing all the modules go into the winser folder in node moudules and 
 
 ###Extension###
 Go to chrome menu
+
 -more tools
+
 -extensions
+
 -Load unpacked
-Find the Extensions folder in this rep and select the manifest.json
+
+Find the Extensions folder in this rep and select the manifest.json.
 
 Every thing should work now.
 
