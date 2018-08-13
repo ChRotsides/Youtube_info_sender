@@ -24,19 +24,13 @@ function getinfo(){
     let id;
     let musicurl=get_music_url();
 
-    // console.log(uploader,title,current_time,time_duration);
-    // console.log("returning");
     let url='';
-    // chrome.tabs.onActivated.addListener(function(activeInfo) {
-    //     console.log(activeInfo.tabId);
-    // });
+
 
     let repeat=setInterval(()=>{
         if (url!=window.location.href){
         id=uniqueId();
         }
-        id=uniqueId();
-        // console.log(chrome.tabs.getCurrent(()=>{console.log(window.location.href)}));
         do {
             try{
                 title=getElementByXpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[3]/div[1]/div/div[5]/div[2]/ytd-video-primary-info-renderer/div/h1/yt-formatted-string").innerHTML;
