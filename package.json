@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "install-windows-service": "winser -i",
+    "uninstall-windows-service": "winser -r"
+  },
+  "name": "api_test",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-gyp": "^3.8.0",
+    "rebuild": "^0.1.2",
+    "request-ip": "^2.1.1",
+    "socket.io": "^2.1.1",
+    "winser": "^1.0.3"
+  }
+}
