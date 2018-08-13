@@ -14,4 +14,4 @@ npm install rebuild
 
 after installing all the modules go into the winser folder in node moudules and run cmd as admin in that folder type in cmd "nssm start api_test" to start the server.
 
-to get the data that the extension is sending you go to this url localhost:60024/getData
+To get the data that the extension is sending you go to this url hhtp://localhost:60024/getData
