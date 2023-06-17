@@ -1,7 +1,7 @@
 # Youtube_info_sender
 Chrome extension that sends information about the current tab open in youtube
 
-###SERVER###
+### SERVER
 
 
 Intall node js and in cmd run 
@@ -22,19 +22,19 @@ npm run-script install-windows-service
 
 after installing all the modules go into the winser folder in node moudules and run cmd as admin in that folder type in cmd "nssm start api_test" to start the server.
 
-###Extension###
+### Extension
 
 
-Go to chrome menu
+Go to Chrome menu
 
--more tools
+- more tools
 
--extensions
+- extensions
 
--Load unpacked
+- Load unpacked
 
-Find the Extensions folder in this repository and select the manifest.json.
+Find the Extensions folder in this repository and select manifest.json.
 
-Every thing should work now.
+Everything should work now.
 
-To get the data that the extension is sending you go to this url http://localhost:60024/getData
+To get the data that the extension is sending you go to this URL http://localhost:60024/getData
